@@ -1,0 +1,24 @@
+{
+  "name": "unbinding.org",
+  "version": "1.0.0",
+  "description": "website for unbinding.org",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "watch": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unbinding-org/unbinding.org.git"
+  },
+  "author": "kareniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unbinding-org/unbinding.org/issues"
+  },
+  "homepage": "https://github.com/unbinding-org/unbinding.org#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2"
+  }
+}
