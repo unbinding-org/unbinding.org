@@ -17,13 +17,9 @@ html {
 body {
   background-color: var(--white);
   font-family: 'Noto Sans', sans-serif;
-  color: var(--black);
-  height: 100%;
+  color: var(--black);  
 }
 
-html, body {
-  height: 100%;
-}
 
 ::selection {
   background: var(--black); /* WebKit/Blink Browsers */
@@ -40,7 +36,7 @@ header {
   background-color: var(--ochre);
   color: white;
   width: 100%;
-  position: fixed;
+  /*position: fixed;*/
   z-index: 1000;
   top: 0;
 }
@@ -55,13 +51,13 @@ header a:hover {
   transition: 0.3s;
 }
 
-nav a {
+header nav a {
   padding: 0 2em;
 }
 
 main {  
-  padding: 5em 5em 0;
-  min-height: 70vh;
+  padding: 5em 5em;
+  /*min-height: 70vh;*/
 }
 
 footer {
@@ -79,39 +75,6 @@ footer a {
 footer a:hover {
   color: white;
   border-color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 200;
-  font-family: sans-serif;
-  zoom: 1.25;
-  margin: 0;
-}
-
-h1 {
-  font-weight: 900;
-}
-
-h2 {
-  font-weight: 400;
-
-}
-
-h3 {
-  font-weight: 300;
-
-}
-
-.logo {
-
-}
-
-.single-col {
-  max-width: 30em;
-}
-
-p {
-  font-weight: 100;
 }
 
 a {
@@ -169,64 +132,18 @@ button:hover {
   background-color: var(--grey-dark);
 }
 
-.card {
-  display: block;
-  margin: 0 auto;
-  background-color: white;
-  width: 310px;
-  height: 460px;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  padding: 1em 2em;
-  box-sizing: border-box;
-  text-align: left;
-}
-
-.card-meta-1 {
-  display: inline-block;
-  width: 50%;
-  float: left;
-}
-
-.card-meta-2 {
-  display: inline-block;
-  text-align: right;
-  width: 50%;
-  margin: 0;
-}
-
-.card-art {
-  height: 160px;
-  background-color: var(--white);
-  margin: 0.5em 0;
-}
-
-.card-title > span:nth-of-type(1) {
-  font-size: 0.5em;
-  line-height: 1;
-  padding: 0.5em 0;
-  font-weight: 500;
-  display: block;
-}
-
-.card-title > span:nth-of-type(2) {
-  font-size: 0.8em;
-  line-height: 0.75;
-  font-weight: 600;
-  display: block;
-}
-
-.card > p {
-  margin-top: 2em;
-  font-weight: 100;
-  line-height: 1.5;
-  font-size: 0.9em;
-}
-
 .has-text-centered {
   text-align: center;
 }
 
 .has-text-right {
   text-align: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0;
 }
