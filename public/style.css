@@ -20,6 +20,27 @@ body {
   color: var(--black);  
 }
 
+#logo a {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+  border-left: 1px solid var(--grey);
+  padding: 2em;
+  quotes: '\201C' '\201D';
+  font-weight: bold;
+  color: var(--grey);
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
 
 ::selection {
   background: var(--black); /* WebKit/Blink Browsers */
@@ -32,22 +53,21 @@ body {
 }
 
 header {
-  padding: 1em;
+  padding: 1em 0;
   background-color: var(--ochre);
   color: white;
   width: 100%;
-  /*position: fixed;*/
   z-index: 1000;
   top: 0;
 }
 
 header a {
   color: var(--white);
+  text-decoration: none;
 }
 
 header a:hover {
-  color: var(--white);
-  text-decoration: none;
+  color: white;
   transition: 0.3s;
 }
 
@@ -56,8 +76,7 @@ header nav a {
 }
 
 main {  
-  padding: 5em 5em;
-  /*min-height: 70vh;*/
+  padding: 5em;
 }
 
 footer {
@@ -69,28 +88,21 @@ footer {
 
 footer a {
   color: var(--white);
-  border-color: var(--white);
 }
 
 footer a:hover {
   color: white;
-  border-color: white;
 }
 
 a {
   font-weight: 100;
   color: var(--ochre);
   transition: 0.3s;
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--ochre-light);
-  transition: 0.3s;
-}
-
-a:focus, a:active {
-  outline: none;
-  color: var(--ochre-dark);
   transition: 0.3s;
 }
 
