@@ -1,0 +1,34 @@
+extends layout.pug
+
+block content
+  .row
+    .three.columns
+      nav
+
+        p
+
+        ul
+          each section in sections
+            li 
+              a(href='#' + section.slug) #{section.title}
+
+    .nine.columns
+
+      h2= title
+
+      div
+        h4 TL;DR
+
+        ol
+          each val in tldr
+            li= val
+
+      hr
+
+      each section in sections
+
+        h4(id='#' + section.slug) #{section.title}
+
+        div !{section.content}
+
+

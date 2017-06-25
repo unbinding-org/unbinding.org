@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  .container  
+    h2= title 
+
+    each subsection in subsections
+
+      h4=subsection.title
+
+      each page in subsection.pages
+        p 
+          a(href=page.path)=page.title

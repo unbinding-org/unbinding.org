@@ -19,6 +19,7 @@
   "homepage": "https://github.com/unbinding-org/unbinding.org#readme",
   "dependencies": {
     "express": "^4.15.3",
+    "js-yaml": "^3.8.4",
     "pug": "^2.0.0-rc.2"
   }
 }
