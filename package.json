@@ -4,8 +4,6 @@
   "description": "website for unbinding.org",
   "main": "index.js",
   "scripts": {
-    "start": "",
-    "watch": "nodemon src"
   },
   "repository": {
     "type": "git",
@@ -17,8 +15,8 @@
     "url": "https://github.com/unbinding-org/unbinding.org/issues"
   },
   "homepage": "https://github.com/unbinding-org/unbinding.org#readme",
-  "dependencies": {
-    "express": "^4.15.3",
+  "dev-dependencies": {
+    "bulma": "^0.5.1",
     "js-yaml": "^3.8.4",
     "pug": "^2.0.0-rc.2"
   }
