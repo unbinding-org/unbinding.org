@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bin/watch",
     "watch": "node bin/watch",
-    "build": "node bin/build"
+    "build": "node bin/build-html && node bin/build-css"
   },
   "repository": {
     "type": "git",
