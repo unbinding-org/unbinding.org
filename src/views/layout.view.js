@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>unbinding.org</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" id="bulma" href="style.css" />
-</head>
+const html = require('choo/html')
 
+module.exports = function (state, emit) {
+  return html`
     <body>
 
       <nav class="navbar">
@@ -29,5 +22,5 @@
           </div>
       </section>
     </body>
-  
-</html>
+  `
+}
